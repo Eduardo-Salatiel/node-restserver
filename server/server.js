@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, "../public")));
 
 //CONFIGURACION GLOBAL DE RUTAS
-app.use(require("./routes/index"));
+app.use(require('./routes/index'))
 //CONEXION
 mongoose.connect(
   process.env.URLDB,
